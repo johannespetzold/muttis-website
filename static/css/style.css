@@ -60,7 +60,8 @@ img {
 
 img.title {
     display: block;
-    margin: 0 auto 30px auto;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -81,14 +82,20 @@ li.img.left p {
     margin-left: 20px;
 }
 
-
-#sectioncontent {
+.sectioncontent {
     max-width: 900px;
+    padding: 1em;
+    margin: 0 auto;
 }
 
+.section:nth-child(odd) {
+    background-color: #8b2e2e;
+    background-color: #671414;
+    /*color: #240000;*/
+}
 
-#sectioncontent {
-    padding: 1em;
+.section {
+    padding-bottom: 40px;
 }
 
 strong {
@@ -137,7 +144,7 @@ strong {
 
 h1 {
     font-size: 400%;
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
     margin-bottom: 1em;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
