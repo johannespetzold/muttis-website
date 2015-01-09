@@ -154,7 +154,7 @@ h2 {
 }
 
 ul {
-    /*list-style: square outside none;*/
     list-style: none;
-    /*margin-left: 2em;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
