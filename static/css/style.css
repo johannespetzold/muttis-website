@@ -72,6 +72,7 @@ li.img p {
 
 li.img.right img, div.img.right img {
     float: right;
+    margin-left: 20px;
 }
 
 li.img.left img {
