@@ -70,7 +70,7 @@ li.img p {
     float: left;
 }
 
-li.img.right img {
+li.img.right img, div.img.right img {
     float: right;
 }
 
@@ -103,7 +103,7 @@ strong {
 	color: #333;
 }
 
-.clearfix:after, li.img:after {
+.clearfix:after, li.img:after, div.img:after {
     content: " ";
     display: block;
     height: 0;
