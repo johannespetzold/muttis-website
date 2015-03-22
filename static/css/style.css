@@ -40,7 +40,7 @@ a:hover {
     background-color: #671414;
 }
 
-li, li.img p {
+li, li.img > p, .bullet-img > p > .strong {
     background-image: url("/static/images/bullet1.png");
     background-repeat: no-repeat;
     background-position-y: 2px;
@@ -64,15 +64,69 @@ img.title {
     margin-bottom: 30px;
 }
 
+.bullet-img {
+    margin-top: 20px;
+}
+
+.bullet-img > p > .strong {
+    display: block;
+    margin-bottom: 0px;
+}
 
 li.img p {
     margin-top: 20px;
     float: left;
 }
 
-li.img.right img, div.img.right img {
+li.img.right .img-box, div.img.right {
     float: right;
     margin-left: 20px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+img.center {
+    margin: 0 auto;
+    display: block;
+}
+
+.bullet-img > p {
+    max-width: 45%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.bullet-img.big-img > p {
+    max-width: 25%;
+}
+
+.bullet-img.big-img > .img-box {
+    max-width: 70%;
+}
+
+.img-box img {
+    /*display: block;*/
+    /*float: left;*/
+    /*margin-bottom: 0;*/
+    /*padding-bottom: 0;*/
+}
+.img-box p {
+    font-size: 90%;
+    font-style: italic;
+    /*margin-top: 0;*/
+    /*padding-top: 0;*/
+    /*clear: both;*/
+    /*float: left;*/
+}
+
+li.img.right p {
+    width: 50%;
 }
 
 li.img.left img {
@@ -81,6 +135,15 @@ li.img.left img {
 
 li.img.left p {
     margin-left: 20px;
+}
+
+div.img.center img {
+    display: block;
+    margin: 0 auto;
+}
+
+div.img.center .text {
+    margin-top: 20px;
 }
 
 .sectioncontent {
@@ -99,16 +162,27 @@ li.img.left p {
     padding-bottom: 40px;
 }
 
-strong {
-	font-weight: 500;
-	color: #333;
+.strong {
+	font-weight: bold;
 }
 
-.clearfix:after, li.img:after, div.img:after {
+.clearfix:after, li.img:after, div.img:after, .bullet-img:after, .sectioncontent:after {
     content: " ";
     display: block;
     height: 0;
     clear: both;
+}
+
+.right-flow {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.left-flow {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -170,6 +244,25 @@ p {
     font-weight: bold;
     margin-top: 40px;
     margin-left: 100px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+}
+
+.signature-right {
+    text-align: right;
+    /*float: right;*/
+    /*margin-top: 40px;*/
+    /*margin-left: 100px;*/
+    /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+    /*font-style: italic;*/
+}
+
+.signature-right .name {
+    font-size: 150%;
+    font-weight: bold;
+    /*margin-top: 40px;*/
+    /*margin-left: 100px;*/
+    margin-bottom: 5px;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-style: italic;
 }
