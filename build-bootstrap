@@ -1,0 +1,10 @@
+#!/bin/bash -ex
+
+cd $(dirname $0)
+WORKDIR=$(pwd)
+BOOTSTRAP_DIR=$(ls -d bootstrap-*)
+cd $BOOTSTRAP_DIR
+
+grunt dist
+
+cp -r dist/* $WORKDIR/www

@@ -1,0 +1,196 @@
+body {
+  position: relative;
+  padding-top: 70px;
+}
+
+.scroll-adjust {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+.navbar a:hover {
+  background-color: #eee !important;
+}
+
+.jumbotron {
+  /*background-color: rgba(0, 0, 0, 0.04);*/
+
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+
+.jumbotron h1 {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 0;
+  margin-bottom: 50px;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+
+
+.jumbotron .text-col ul, .jumbotron h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.jumbotron .text-col ul {
+  list-style-type: circle;
+}
+
+@media (min-width:768px){
+  .jumbotron .text-col {
+    min-height: 350px;
+  }
+
+  .jumbotron .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+
+  .gallery-text-col {
+    min-height: 300px;
+    position: relative;
+  }
+
+  .gallery-text-col.left {
+    margin-right: 300px;
+  }
+
+  .gallery-text-col.left.right-align {
+    text-align: right;
+  }
+
+  .gallery-text-col.left.right-align p {
+    display: block;
+  }
+
+  .gallery-text-col.right {
+    margin-left: 350px;
+  }
+
+  .gallery-text-col.right-narrow {
+    margin-left: 590px;
+  }
+
+  .gallery-text-col.right-wide {
+    margin-left: 263px;
+  }
+
+  .gallery-text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+}
+
+.signature {
+  text-align: right;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.signature .small {
+  font-style: normal;
+  font-size: 70%;
+}
+
+.page-header h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: 10px;
+  color: #eee;
+  margin-bottom: 30px;
+}
+
+@media (max-width:767px){
+  .page-header h1 {
+    font-size: 30px;
+  }
+}
+
+.img-thumbnail p {
+  max-width: 300px;
+  margin: 0;
+  font-style: italic;
+}
+
+.img-thumbnail p.w200 {
+  max-width: 200px;
+}
+
+.gallery-row {
+  margin-bottom: 50px;
+}
+
+.gallery-text h2 {
+  display: inline;
+  margin-right: 5px;
+}
+
+.gallery-text h2, .page-header h2 {
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.gallery-text p {
+  display: inline;
+}
+
+.gallery-text p, .gallery-text li, .page-header li {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.page-header {
+  padding-bottom: 40px;
+}
+/*.section-text:last-child {
+  margin-bottom: 30px;
+}*/
+
+.section-text, p.section-text {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 20px;
+  display: block;
+}
+
+.text-col-left {
+  margin-right: 20px;
+}
+
+h2 + p.section-text {
+  margin-top: 0;
+}
+
+.page-header .img-thumbnail.pull-left {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.page-header .signature {
+  text-align: left;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+
+/* TODO: autoprefixer */
