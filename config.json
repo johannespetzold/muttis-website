@@ -2,6 +2,6 @@
     "aws-access-key": "AKIAI3JYSJSFQSUHWIGQ",
     "aws-bucket-name": "reitstunde-mobil.de",
     "aws-bucket-region": "eu-central-1",
-    "aws-bucket-website": "reitstunde-mobil.de.s3-website-us-east-1.amazonaws.com",
+    "aws-bucket-website": "reitstunde-mobil.de.s3-website.eu-central-1.amazonaws.com",
     "port": 8857
 }
