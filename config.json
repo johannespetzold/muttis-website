@@ -1,7 +1,7 @@
 {
     "aws-access-key": "AKIAI3JYSJSFQSUHWIGQ",
-    "aws-bucket-name": "reitschule-chiemsee.de",
+    "aws-bucket-name": "reitunterricht-bgl.de",
     "aws-bucket-region": "eu-central-1",
-    "aws-bucket-website": "reitschule-chiemsee.de.s3-website.eu-central-1.amazonaws.com",
+    "aws-bucket-website": "reitunterricht-bgl.de.s3-website.eu-central-1.amazonaws.com",
     "port": 8857
 }
